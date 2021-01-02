@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="./css/grid.css">
+<title>grid</title>
+</head>
+<body> <nav class="headnav">
+        <div class="logoimg">
+        <img src="./images/insure/logo.svg" alt="">
+</div>
+<div class="hamburger">
+        <div > <img src="./images/insure/icon-hamburger.svg" alt="">
+        </div> 
+</div>
+
+        <div class="menu">
+            <ul>HOW WE WORK</ul>
+            <ul>BLOG</ul>
+            <ul>ACCOUNTS</ul>
+            <ul>VIEW PLANS</ul>
+        </div>
+        
+    </nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+
+   $(document).ready(function(){
+
+      $('.hamburger').click(function(){
+         $('.menu').toggleClass('ham-menu')
+
+      })
+
+
+   });
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="./css/task4.css">
+<title>Task4</title>
+</head>
+<body>
+    <div class="logo">
+<img  src="./images/baseapparel/logo.svg" alt="">
+    </div>
+    
+    <div class="texts">
+        <div class="content">
+<!-- <img class="desktoplogo" src="./images/baseapparel/logo.svg" alt=""> -->
+        <div class="info">
+            <h1><span>WE'RE</span></h1>
+            <h1>COMING</h1>
+            <h1>SOON</h1>
+            <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up to date with announcements and our launch deals</p>
+            <div class="buttonarea"> 
+                <input type="text" placeholder="Email Address">
+                
+                <button onclick="validateEmail()"><i><img src="./images/baseapparel/icon-arrow.svg" alt=""></i></button>
+            </div>
+        </div></div>
+    </div>
+    <div class="image"><img src="./images/baseapparel/hero-desktop.jpg" alt=""></div>
+
+    <script>
+        let email;
+        
+    function validateEmail(email) {
+        email = document.querySelector('input').value;
+        console.log(email)
+        // alert('i work') 
+
+         
+         if(email === ''){
+            alert('Email cannot be empty')
+        }  
+        else{
+            
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            let result= re.test(String(email).toLowerCase());
+            console.log(result)
+            
+         if(result !== true){
+        
+            alert('Enter valid Email')
+
+            }
+        }
+
+        
+        }
+            
+
+            
+         
+    
+
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+</html>
