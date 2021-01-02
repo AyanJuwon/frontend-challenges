@@ -1,0 +1,176 @@
+*{
+--firstlinear:  Linear-gradient(35deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%));
+--secondlinear:linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%));
+
+
+--DesaturatedRed: hsl(0, 36%, 70%);
+--SoftRed: hsl(0, 93%, 68%);
+
+/* ### Neutral */
+
+--DarkGrayishRed: hsl(0, 6%, 24%);
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap');
+
+    h1 span{
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+    /* color: white; */
+}
+
+@media only screen and (min-width:426px){
+
+
+
+
+body{
+display: grid;
+grid-template-columns: 60% 40%;
+    /* background-color: hsl(0, 80%, 86%); */
+    
+    font-family: 'Josefin Sans';
+}
+
+.texts{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/Practice\ Projects/frontend/images/baseapparel/bg-pattern-desktop.svg"
+    );
+    /* width:50vw; */
+    grid-column: 1;
+
+}
+.logo{
+    /* display: none; */
+    position: absolute;
+    left:12%;
+    top:10%
+    /* opacity: 0; */
+}
+.image{
+    grid-column: 2;
+    min-width: 40%;
+    /* max-height: 100vh; */
+
+}
+.image img{
+    min-width: 100%;
+    height: 100vh;
+}
+
+h1{
+    /* font-family: cursive; */
+    letter-spacing: 10px;
+   font-family: 'Josefin Sans', sans-serif;
+}
+h1 span{
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+    /* color: white; */
+}
+.content{
+    margin-left: 20%;
+    margin-top: 20%;
+    width: 60%;
+   
+}
+.content img{
+     margin-top:10% ;
+}
+.info{
+    margin-top: 20%;
+}
+p{
+  color: var(--DesaturatedRed);
+  font-size: 16px;  
+  width: 80%;
+}
+
+
+
+
+}.buttonarea{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 80%;
+    border: 1px solid var(--DesaturatedRed);
+    height: 51px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.buttonarea input{
+ color: var(--DesaturatedRed);
+ margin-left: 20px;   
+ margin-top: 10px;   
+ outline: none;
+ border: none;
+ background-color: transparent;
+}
+::placeholder, ::-webkit-input-placeholder{
+    color: var(--DesaturatedRed);
+}
+button{
+    /* float: right; */
+    /* position: relative;
+    left:80%; */
+    background-color: var(--DesaturatedRed);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* width: 90px; */
+    border:none;
+    height: 50px;
+    box-shadow: 1px 1px 10px 5px rgba(128, 128, 128, 0.274);
+}
+button:hover{
+    z-index: 200;
+    box-shadow: 1px 1px 10px 3px rgba(128, 128, 128, 0.274);
+}
+@media only screen and (max-width:425px){
+
+body{
+    min-height:100vh;
+    display: grid;
+    grid-template-rows: 15% 35% 50%;
+    margin:0;
+    
+}
+
+h1{
+    margin: 0.1rem;
+}
+.logo{
+    grid-row:1
+}
+.logo img{
+    margin-left: 10%;
+    margin-top:5vh;
+    height: 1.3rem;
+}
+.image{
+    grid-row: 2;
+    background-image: url("/Practice\ Projects/frontend/images/baseapparel/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.texts{
+    text-align:center;
+    grid-row:3;
+}
+.image img{
+  
+    display:none;
+
+
+}
+.buttonarea{
+    margin-left:10%
+}
+
+
+}

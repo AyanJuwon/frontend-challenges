@@ -1,0 +1,298 @@
+*{
+
+--DarkViolet: hsl(256, 26%, 20%);
+--GrayishBlue: hsl(216, 30%, 68%);
+
+/* ### Neutral */
+
+--VeryDarkViolet: hsl(270, 9%, 17%);
+--DarkGrayishViolet: hsl(273, 4%, 51%);
+--VeryLightGray: hsl(0, 0%, 98%);
+--headerfont:'DM Serif Display', serif;
+--bodyfont: 'Karla', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
+body{
+    max-width: 100vw;
+}
+
+button{
+    font-size: 10px;
+    font-family: var(--bodyfont);
+    background: none;
+    color:white;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+@media only screen and (min-width:768px){
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.headnav{
+    width:100vw;
+    height:10vh;
+
+/* background-color:white; */
+}
+.headnav img{
+    padding-top:20px;
+    padding-left: 10%;
+}
+.headnav div{
+    float: right;
+    /* margin-right:10%; */
+
+    padding-top: 20px ;
+    padding-right: 10%;
+
+}
+.headnav div ul{
+    display:inline;
+}
+
+
+
+.intro{
+height: 100vh;
+z-index: 100;
+}
+
+.upperbody{
+    height: 60vh;
+    /* z-index: -100; */
+  
+    width: 100vw;
+
+    
+    background-color: var(--DarkViolet);
+ background-image: url("/Practice\ Projects/frontend/images/insure/bg-pattern-intro-left-desktop.svg"),url("/Practice\ Projects/frontend/images/insure/bg-pattern-intro-right-desktop.svg");
+background-repeat: no-repeat no-repeat;
+    background-position: top left, right bottom; 
+}
+
+.content{
+    padding-top:7%;
+    margin: auto;
+    color:white;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.content h1{
+    font-weight:900;
+    font-family: var(--headerfont);
+}
+.content p{
+    width:93%;
+    font-size:12px;
+    font-weight: 100;
+    font-family: var(--bodyfont);
+}
+.image img{
+    height: 70vh;
+    width:35vw;
+}
+
+.infosection{
+    margin: 50px auto;
+    width: 800px;
+    display:grid;
+    grid-template-columns: repeat(3,250px);
+grid-column-gap: 10px;
+
+}
+.diff{
+    /* margin-left: 20%; */
+    width:800px;
+    margin:auto;
+    font-family: var(--headerfont);
+    font-weight: 900;
+    
+}
+.card img{
+    width:4rem;
+    
+}
+.cardimg{
+    margin-bottom: 10px;
+}
+.card{
+    height: 200px;
+    padding: auto;
+    border:none;
+}
+.card h3{
+
+    font-family: var(--headerfont);
+
+}
+.card p{
+    font-family: var(--bodyfont);
+    font-weight: 100;
+    font-size: 13px;
+    color: var(--GrayishBlue);
+}
+.how_we_work{
+    
+    background-image: url("/Practice\ Projects/frontend/images/insure/bg-pattern-how-we-work-desktop.svg") ;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--DarkViolet);
+    width:800px;
+    margin: 10vh auto;
+    height: 200px;
+    color:white;
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+.how-text{
+    margin:auto;
+    font-family: var(--headerfont);
+
+}
+.how-btn{
+    margin:auto;
+}
+
+footer{
+    height: 45vh;
+    width: 100vw;
+    background-color: var(--VeryLightGray);
+    background-image: url("/Practice\ Projects/frontend/images/insure/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;   
+    text-transform: uppercase;
+
+}
+
+.footer-content{
+    width:80%;
+    margin:auto;
+}
+
+.foot-nav{
+    width:100%;
+    height:10vh;
+    margin: auto;
+border-bottom:1px solid var(--GrayishBlue);
+/* background-color:white; */
+}
+.foot-nav img{
+    padding-top:20px;
+    padding-left: 10%;
+}
+.foot-nav div{
+    float: right;
+    margin-right:10%;
+
+    padding: 20px;
+
+}
+.foot-nav div ul{
+    display:inline;
+}
+/* .foot-nav{
+    width: 100%;
+    height:10vh;
+    display: inline;
+border-bottom:1px solid black;
+background-color:white;
+
+} */
+i{
+    color:var(--GrayishBlue)
+}
+
+.map{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.map h6{
+    padding: 20px 0;
+    color:var(--GrayishBlue)
+}
+.map ul{
+    
+    padding-left:0;
+}
+.hamburger{
+    display: none;
+}
+}
+
+
+
+
+/* ###################MOBILE */
+
+
+@media only screen and (max-width:426px){
+
+    body{
+        background-color: brown ;
+        width:100vw;
+        overflow-x: hidden;
+        /* background-color: transparent; */
+    }
+
+
+
+.headnav{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    width:100vw;
+        background-color: #ffffff;
+
+}
+img{
+    height: 20px;
+    /* padding: 10px; */
+    grid-column: 1;
+}
+
+
+.hamburger img{
+    height: 20px;
+    grid-column:2;
+    border: transparent;
+}
+
+
+       /* display: inline; */
+    
+  
+
+.menu{
+    position: absolute;
+    height:100vh;
+width: 100vw;
+    text-align: center;
+    /* display: none; */
+
+    /* background-image: url("/Practice\ Projects/frontend/images/insure/bg-pattern-intro-left-mobile.svg"); */
+    width: 100vw;
+    margin: 10px auto;
+    /* height: 0vh;  */
+    /* opacity: 0; */background-color:var(--DarkViolet);
+    /* transform: translateX(-110%); */
+    transition: all ease 2s;
+}
+.menu ul{
+   padding: 50px;
+    color: white;
+}
+.image{
+    background-image: url("/Practice\ Projects/frontend/images/insure/image-intro-mobile.jpg");
+    height: 60vh;
+}
+.image img{
+    display: none;
+}
+}

@@ -1,0 +1,214 @@
+* {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /* ### Accent */
+
+  --Blue: hsl(248, 32%, 49%);
+
+  /* ### Neutral */
+
+  --DarkBlue: hsl(249, 10%, 26%);
+  --GrayishBlue: hsl(246, 25%, 77%);
+  box-sizing: border-box;
+}
+@import url("https://fonts.google.com/specimen/Poppins");
+
+.words {
+  color: white;
+  font-family: "Poppins";
+}
+
+.ad {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.171);
+  text-align: center;
+  background-color: var(--Blue);
+  width: 80%;
+  color: white;
+}
+
+@media only screen and (min-width: 426px) {
+  body {
+    background-image: url("/Practice\ Projects/frontend/images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Red);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: "Poppins";
+  }
+
+  .words {
+    grid-column: 1;
+
+    height: 100vh;
+  }
+
+  .content {
+    padding-top: 30vh;
+    width: 60%;
+    margin: auto;
+
+    padding: auto 0;
+  }
+
+  .formarea {
+    grid-column: 2;
+    height: 100vh;
+    display: inline;
+  }
+
+  .ad {
+    margin: 40px 0;
+  }
+
+  .ad p span {
+    font-weight: 900;
+  }
+  .ad p {
+    padding: 13px;
+    font-weight: 100;
+  }
+
+  .form {
+    width: 80%;
+  }
+  form {
+    padding-top: 5%;
+    margin: 0px 10%;
+  }
+}
+.form {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 5px rgba(128, 128, 128, 0.16);
+}
+button {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  /* margin: 10px 10%; */
+}
+
+input {
+  /* width:90%; */
+  padding: 10px;
+  outline: none;
+  background: transparent;
+  border: none;
+  /* margin-left: 10%; */
+  /* margin: auto;     */
+}
+
+button {
+  background-color: var(--Green);
+}
+.extra {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--GrayishBlue);
+  padding: 20px;
+}
+a {
+  color: var(--Red);
+  text-decoration: none;
+}
+
+.deets {
+  /* width: 90%; */
+  display: grid;
+
+  grid-template-columns: 85% 10%;
+  border: 0.12rem solid var(--DarkBlue);
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.deets img {
+  padding: 10px;
+  display: none;
+}
+
+.error {
+  color: red;
+
+  text-align: center;
+  font-size: 0.9rem;
+  padding: none;
+  display: none;
+}
+input img {
+  margin: auto;
+  padding: auto;
+}
+
+/* ################################MOBILE */
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url("/Practice\ Projects/frontend/images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Red);
+    width: 100vw;
+    display: grid;
+
+    min-height: 100vh;
+    grid-template-rows: 30% 70%;
+  }
+
+  .words {
+    grid-row: 1;
+    /* width: 100vw;    */
+  }
+  .formarea {
+    grid-row: 2;
+  }
+
+  .content {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .content h1 {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+  .ad {
+    margin: auto;
+  }
+  .ad p span {
+    font-weight: 700;
+  }
+  .ad p {
+    padding: 13px;
+    font-weight: 100;
+  }
+  .form {
+    width: 80%;
+    margin: auto;
+  }
+  form {
+    padding-top: 10px;
+  }
+  .deets {
+    width: 80%;
+    margin: 10px auto;
+
+    /* width: 90%; */
+    display: grid;
+
+    grid-template-columns: 80% 10%;
+    border: 0.12rem solid var(--DarkBlue);
+
+    border-radius: 5px;
+  }
+  button {
+    width: 80%;
+    margin: 0 10%;
+  }
+}

@@ -1,0 +1,123 @@
+* {
+  --Violet: hsl(257, 40%, 49%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins&display=swap");
+
+body {
+  /* width:100vw; */
+  /* height:100vh; */
+  background-image: url("/Practice\ Projects/frontend/images/bg-desktop.svg");
+  /* background-color: blue; */
+  background-color: var(--Violet);
+  color: white;
+  font-weight: 400;
+  background-size: cover;
+  /* background-position:center; */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.text {
+  color: white;
+}
+
+button {
+  background-color: white;
+  color: var(--Violet);
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.287);
+}
+.icons {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+}
+
+.icons i {
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.287);
+}
+@media only screen and (min-width: 426px) {
+  header {
+    /* font-family: 'Poppins'; */
+
+    font-family: "Open Sans", sans-serif;
+
+    height: 15vw;
+  }
+  header img {
+    margin-top: 4%;
+    margin-left: 2vw;
+  }
+  main {
+    width: 100vw;
+    margin-top: 20%;
+    font-family: "Poppins", sans-serif;
+  }
+  .markup {
+    margin-left: 4vw;
+    width: 40%;
+    /* height: 100px; */
+    float: left;
+  }
+  h1 {
+    font-weight: 700;
+  }
+
+  .texts {
+    margin-left: 40px;
+    width: 33vw;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-size: cover;
+    min-height: 100vh;
+  }
+  header {
+    margin-top: 5%;
+    margin-left: 10vw;
+    margin-bottom: 10%;
+
+    /* grid-row: 1; */
+  }
+  header img {
+    width: 6rem;
+  }
+
+  .main {
+    /* display: grid;
+    grid-template-rows: repeat(2,minmax(75px,auto)); */
+    margin-left: 10vw;
+  }
+  .markup {
+    width: 75vw;
+  }
+  .texts {
+    width: 78vw;
+    /* margin-right: 10vw; */
+  }
+  .content h1 {
+    /* display: inline; */
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  button {
+    margin-left: 10vw;
+    padding: 10px 60px;
+  }
+}

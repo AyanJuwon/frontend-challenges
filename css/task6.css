@@ -1,0 +1,279 @@
+* {
+  --LinearGradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+  --VeryLightGrayishBlue: hsl(240, 78%, 98%);
+  --LightGrayishBlue: hsl(234, 14%, 74%);
+  --GrayishBlue: hsl(233, 13%, 49%);
+  --DarkGrayishBlue: hsl(232, 13%, 33%);
+  margin: auto;
+  box-sizing:border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+body {
+  background-color: var(--VeryLightGrayishBlue);
+ font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  max-height: 100vh;
+
+  background-image: url("/Practice\ Projects/frontend/images/bg-top.svg") , url("/Practice\ Projects/frontend/images/bg-bottom.svg");
+ 
+  background-repeat: no-repeat, no-repeat;
+
+  /* background-size: cover; */
+  background-position: right top, left bottom;
+ 
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    transition: all ease 1s;
+}
+
+   .switcharea{
+       width: 280px;
+       height: 50px;
+       padding:50px;
+       display: grid;
+       grid-column-gap: 10px;
+       grid-template-columns: 30% 50% 10%;
+   }
+   .switcharea > label{
+       width: 100%;
+       color: var(--LightGrayishBlue);
+
+   }
+    .switch{
+        width:100%;
+        height:30px;
+        
+background-color:  hsl(237, 63%, 64%) ;
+background-image:linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+        border-top-left-radius:20px ;
+        border-top-right-radius:20px ;
+        border-bottom-left-radius:20px ;
+        border-bottom-right-radius:20px ;
+        /* border: 1px solid black; */
+    }
+
+    .switchbtn{
+
+
+        transition: all ease 1s;
+        background-color: white;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        top: 3px;
+        position: relative;
+
+        left:-30%;
+
+
+    }
+
+    .switchclicked{
+        transition: all ease 1s;
+        position: relative;
+
+        left:30%;
+    }
+    .card2{
+        color:white;
+background-color:  hsl(237, 63%, 64%) ;
+background-image:linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+z-index: 100;
+
+    }
+
+.card2 p{
+    color: white;
+}
+.card2 h5{
+    color: white;
+}
+.card2 h1{
+    color: white;
+}
+.card2 > div{
+    border: var(--LightGrayishBlue);
+}
+
+
+@media only screen and (min-width: 426px) {
+    h2{
+        font-weight:700 ;
+        color:var(--DarkGrayishBlue)
+    }
+  div.container {
+      width: 70vw;
+      height: 70vh;
+      /* background-color: aquamarine; */
+      display: grid;
+      grid-template-columns: repeat(3,300px);
+  }.card{
+      margin:0;
+      width: 300px;
+      height: 400px;
+     background-color: white;
+     border-radius: 5px;
+     border: none;
+     box-shadow: 1px 3px 7px 1px grey;
+     /* border-right: none; */
+ }
+  .content > div{
+     width:80%;
+     border: 0.1rem solid var(--LightGrayishBlue);
+     opacity: 0.2;
+ }
+  
+ h5,h1,p{
+    color: var(--DarkGrayishBlue);
+    text-align:center;}
+h5{
+    font-weight: 600;
+    padding:20px;
+}
+h1{
+    font-weight: 700;
+    padding:20px;
+}
+p{
+    padding-top:10px;
+}
+.card1{grid-column: 1;
+margin-top: 10px;
+box-shadow: 1px 3px 5px 1px grey;}
+
+  .card2{grid-column: 2;
+    height: 420px;
+    }
+
+
+  .card3{grid-column: 3;
+margin-top: 10px;
+box-shadow: 1px 3px 5px 1px rgba(128, 128, 128, 0.335);}
+ 
+
+
+ button{
+     margin: 10%;
+     width: 80%;
+     padding: 10px;
+     border-radius:5px;
+     border: none;
+     background-color:hsl(237, 63%, 64%);
+     background-image:linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+      outline: none !important;
+    box-shadow: none !important;
+ }
+.card2 button{
+    color: var(--DarkGrayishBlue);
+    background-color: white;
+    background-image: none;
+}
+
+}
+
+ button{
+     margin: 10%;
+     width: 80%;
+     padding: 10px;
+     border-radius:5px;
+     border: none;
+     background-color:hsl(237, 63%, 64%);
+     background-image:linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+      outline: none !important;
+    box-shadow: none !important;
+ }
+
+ 
+ /* #################################MOBILE########################### */
+
+
+ @media only screen and (max-width:425px){
+body{
+
+
+  background-color: var(--VeryLightGrayishBlue);
+ font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+
+  background-image: url("/Practice\ Projects/frontend/images/bg-top.svg");
+ 
+  background-repeat: no-repeat;
+
+  /* background-size: cover; */
+  background-position: right top;
+   display:grid;
+  grid-template-rows: 30% 70%;
+}
+header{
+
+    grid-row:1;
+}
+.container{
+    grid-row:2;
+}
+.switcharea{
+    padding: 30px;
+    margin-left: auto;
+    transform:translateX(-5%);
+}
+
+h2{
+    color: var(--DarkGrayishBlue)
+}
+
+ div.container {
+     /* margin: auto; */
+      width: 90vw;
+      height: 70vh;
+      /* background-color: aquamarine; */
+      display: grid;
+      grid-template-rows: repeat(3,400px);
+      grid-row-gap:10px;
+  }.card{
+      
+      margin:auto;
+      width: 90%;
+      /* height: 300px; */
+     background-color: white;
+     border-radius: 5px;
+     border: none;
+     box-shadow: 1px 3px 7px 1px grey;
+     /* border-right: none; */
+ }
+  .content > div{
+     width:80%;
+     border: 0.1rem solid var(--LightGrayishBlue);
+     opacity: 0.2;
+ }
+
+.card1{grid-row: 1;}
+.card2{grid-row:2;}
+.card3{grid-row:3;}
+
+ h5,h1,p{
+    color: var(--DarkGrayishBlue);
+    text-align:center;}
+h5{
+    font-weight: 600;
+    padding:20px;
+}
+h1{
+    font-weight: 700;
+    padding:20px;
+}
+p{
+    padding-top:10px;
+}
+
+
+}
+
+ 
